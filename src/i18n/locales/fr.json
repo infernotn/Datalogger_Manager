@@ -1,0 +1,88 @@
+{
+  "dashboard": {
+    "title": "Tableau de bord",
+    "totalDataloggers": "Total Dataloggers",
+    "activeUsages": "Utilisations Actives",
+    "availableDataloggers": "Dataloggers Disponibles",
+    "inUseDataloggers": "Dataloggers en Utilisation",
+    "calibrationAlerts": "Alertes de Calibration",
+    "recentAlerts": "Alertes Récentes"
+  },
+  "dataloggers": {
+    "title": "Dataloggers",
+    "name": "Nom",
+    "type": "Type",
+    "status": "Statut",
+    "filter": "Filtrer par nom"
+  },
+  "usage": {
+    "title": "Gestion des Utilisations",
+    "datalogger": "Datalogger",
+    "type": "Type",
+    "startDate": "Date de Début",
+    "endDate": "Date de Fin",
+    "location": "Emplacement",
+    "filter": "Filtrer par emplacement",
+    "active": "Actif"
+  },
+  "calibration": {
+    "title": "Suivi de Calibration",
+    "name": "Nom",
+    "lastDate": "Dernière Calibration",
+    "nextDate": "Prochaine Calibration",
+    "status": "Statut",
+    "filter": "Filtrer par nom",
+    "OK": "OK",
+    "DUE_SOON": "Bientôt Due",
+    "OVERDUE": "En Retard"
+  },
+  "audit": {
+    "title": "Journal d'Audit",
+    "user": "Utilisateur",
+    "action": "Action",
+    "entity": "Entité",
+    "timestamp": "Horodatage",
+    "changes": "Changements",
+    "old": "Ancien",
+    "new": "Nouveau",
+    "filter": "Filtrer par action"
+  },
+  "users": {
+    "title": "Gestion des Utilisateurs",
+    "username": "Nom d'utilisateur",
+    "email": "Email",
+    "role": "Rôle",
+    "active": "Actif",
+    "permissions": "Permissions",
+    "filter": "Filtrer par nom d'utilisateur"
+  },
+  "actions": "Actions",
+  "create": "Créer",
+  "edit": "Modifier",
+  "delete": "Supprimer",
+  "close": "Fermer",
+  "assign": "Assigner",
+  "update": "Mettre à Jour",
+  "logout": "Déconnexion",
+ "login": "Connexion",
+  "loading": "Chargement...",
+  "accessDenied": "Accès refusé",
+  "pinModal": {
+    "title": "Confirmer avec PIN",
+    "placeholder": "Entrez votre PIN",
+    "confirm": "Confirmer",
+    "cancel": "Annuler",
+    "required": "PIN requis"
+  },
+  "Login": {
+    "title": "Connexion",
+    "username": "Nom d'utilisateur",
+    "password": "Mot de passe",
+    "submit": "Se connecter",
+    "required": "Requis",
+    "usernameNotFound": "Nom d'utilisateur non trouvé"
+  },
+  "user": {
+    "welcome": "Bienvenue"
+  }
+}

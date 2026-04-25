@@ -1,0 +1,26 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Users: read/write own, ADMIN can manage all
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+      allow read, write: if request.auth != null &&
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'ADMIN';
+    }
+    // Dataloggers: read all authenticated, write only via functions
+    match /dataloggers/{dataloggerId} {
+      allow read: if request.auth != null;
+      allow write: if false;
+    }
+    // Usages: read all authenticated, write only via functions
+    match /usages/{usageId} {
+      allow read: if request.auth != null;
+      allow write: if false;
+    }
+    // AuditLogs: read all authenticated, write only via functions
+    match /auditLogs/{auditId} {
+      allow read: if request.auth != null;
+      allow write: if false;
+    }
+  }
+}

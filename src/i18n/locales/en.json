@@ -1,0 +1,88 @@
+{
+  "dashboard": {
+    "title": "Dashboard",
+    "totalDataloggers": "Total Dataloggers",
+    "activeUsages": "Active Usages",
+    "availableDataloggers": "Available Dataloggers",
+    "inUseDataloggers": "In Use Dataloggers",
+    "calibrationAlerts": "Calibration Alerts",
+    "recentAlerts": "Recent Alerts"
+  },
+  "dataloggers": {
+    "title": "Dataloggers",
+    "name": "Name",
+    "type": "Type",
+    "status": "Status",
+    "filter": "Filter by name"
+  },
+  "usage": {
+    "title": "Usage Management",
+    "datalogger": "Datalogger",
+    "type": "Type",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "location": "Location",
+    "filter": "Filter by location",
+    "active": "Active"
+  },
+  "calibration": {
+    "title": "Calibration Tracking",
+    "name": "Name",
+    "lastDate": "Last Calibration",
+    "nextDate": "Next Calibration",
+    "status": "Status",
+    "filter": "Filter by name",
+    "OK": "OK",
+    "DUE_SOON": "Due Soon",
+    "OVERDUE": "Overdue"
+  },
+  "audit": {
+    "title": "Audit Trail",
+    "user": "User",
+    "action": "Action",
+    "entity": "Entity",
+    "timestamp": "Timestamp",
+    "changes": "Changes",
+    "old": "Old",
+    "new": "New",
+    "filter": "Filter by action"
+  },
+  "users": {
+    "title": "User Management",
+    "username": "Username",
+    "email": "Email",
+    "role": "Role",
+    "active": "Active",
+    "permissions": "Permissions",
+    "filter": "Filter by username"
+  },
+  "actions": "Actions",
+  "create": "Create",
+  "edit": "Edit",
+  "delete": "Delete",
+  "close": "Close",
+  "assign": "Assign",
+  "update": "Update",
+  "logout": "Logout",
+  "login": "Login",
+  "loading": "Loading...",
+  "accessDenied": "Access Denied",
+  "pinModal": {
+    "title": "Confirm with PIN",
+    "placeholder": "Enter your PIN",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "required": "PIN required"
+  },
+  "login": {
+    "title": "Login",
+    "username": "Username",
+    "password": "Password",
+    "submit": "Log In",
+    "required": "Required",
+    "usernameNotFound": "Username not found"
+  },
+  "user": {
+    "welcome": "Welcome"
+  }
+}
