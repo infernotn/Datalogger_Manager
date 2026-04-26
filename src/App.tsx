@@ -9,7 +9,7 @@ import CalibrationTracking from './pages/CalibrationTracking';
 import AuditTrail from './pages/AuditTrail';
 import UserManagement from './pages/UserManagement';
 import './App.css'
-
+import './firebase/config.ts';
 function App() {
   return (
     <Router>

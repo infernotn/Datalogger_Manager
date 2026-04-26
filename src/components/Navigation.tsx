@@ -4,6 +4,7 @@ import { useAuth } from '../contexts/AuthContext';
 import { useTranslation } from 'react-i18next';
 import { DarkMode, LightMode } from '@mui/icons-material';
 
+
 const Navigation: React.FC = () => {
   const { user, userData, logout } = useAuth();
   const location = useLocation();
@@ -33,7 +34,9 @@ const Navigation: React.FC = () => {
           </div>
 
           <div className="flex items-center gap-4">
-            <Link to="/" className={`px-3 py-2 rounded ${isActive('/')}`}>{t('dashboard.title')}</Link>
+            <Link to="/" className={`px-3 py-2 rounded ${isActive('/')}`}>
+            {t('dashboard.title')}
+            </Link>
             <Link to="/dataloggers" className={`px-3 py-2 rounded ${isActive('/dataloggers')}`}>{t('dataloggers.title')}</Link>
             <Link to="/usage" className={`px-3 py-2 rounded ${isActive('/usage')}`}>{t('usage.title')}</Link>
             <Link to="/calibration" className={`px-3 py-2 rounded ${isActive('/calibration')}`}>{t('calibration.title')}</Link>
