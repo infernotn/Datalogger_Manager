@@ -27,13 +27,14 @@ export type Datalogger = {
   lastCalibrationDate: string;
   nextCalibrationDate: string;
   status: "AVAILABLE" | "IN_USE" | "OUT_OF_SERVICE";
+  currentUsageId?: string;
   createdAt: string;
   updatedAt: string;
 };
-
+export type CycleType = "QO" | "EOR" | "routine";
 export type Usage = {
   id: string;
-  dataloggerId: string;
+  dataloggerId: string[];
   usageType:
     | "CYCLE_VALIDATION"
     | "SUIVI_LOCAL"
@@ -43,9 +44,12 @@ export type Usage = {
     | "AUTRE";
   startDate: string;
   endDate?: string;
-  location: string;
-  projectRef?: string;
+  location?: string;
   comments?: string;
+  cycleDetails?: {
+    cycleType: "QO" | "EOR" | "routine";
+    cycleRef: string;
+  };
 };
 
 export type AuditLog = {

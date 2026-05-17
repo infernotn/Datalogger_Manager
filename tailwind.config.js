@@ -20,7 +20,8 @@ export default {
           800: '#5b21b6',
           900: '#4c1d95',
         },
-        darkBg: '#18122B',
+        darkBg: '#1d1530',
+
         darkCard: '#393053',
         darkAccent: '#635985',
         darkText: '#EDE4FF',

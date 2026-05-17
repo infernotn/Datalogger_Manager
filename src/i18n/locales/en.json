@@ -13,7 +13,8 @@
     "name": "Name",
     "type": "Type",
     "status": "Status",
-    "filter": "Filter by name"
+    "filter": "Filter by name",
+    "measurementType": "Measurement Type"
   },
   "usage": {
     "title": "Usage Management",
@@ -64,7 +65,7 @@
   "assign": "Assign",
   "update": "Update",
   "logout": "Logout",
-  "login": "Login",
+
   "loading": "Loading...",
   "accessDenied": "Access Denied",
   "pinModal": {

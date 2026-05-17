@@ -10,7 +10,7 @@ import PinModal from '../components/PinModal';
 
 const CalibrationTracking: React.FC = () => {
   const { t } = useTranslation();
-  const { user } = useAuth();
+  const { user, userData } = useAuth();
   const navigate = useNavigate();
   const [dataloggers, setDataloggers] = useState<Datalogger[]>([]);
   const [loading, setLoading] = useState(true);
@@ -103,7 +103,13 @@ const CalibrationTracking: React.FC = () => {
           </tbody>
         </table>
       </div>
-      <PinModal isOpen={modalOpen} onClose={() => setModalOpen(false)} onConfirm={confirmAction} />
+      <PinModal
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        onConfirm={confirmAction}
+        user={userData}
+        onLoginRequired={() => navigate('/login')}
+      />
     </div>
   );
 };

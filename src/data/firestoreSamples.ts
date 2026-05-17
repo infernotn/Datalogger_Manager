@@ -94,7 +94,7 @@ export const sampleUsers: User[] = [
 export const sampleDataloggers: Datalogger[] = [
   {
     id: "datalogger_001",
-    name: "EXX-001",
+    name: "E1",
     type: "ATEX",
     measurementType: "TEMPERATURE",
     calibrationPeriodMonths: 12,
@@ -106,7 +106,7 @@ export const sampleDataloggers: Datalogger[] = [
   },
   {
     id: "datalogger_002",
-    name: "EXX-002",
+    name: "E2",
     type: "ATEX",
     measurementType: "TEMP_HUMIDITY",
     calibrationPeriodMonths: 12,
@@ -118,7 +118,7 @@ export const sampleDataloggers: Datalogger[] = [
   },
   {
     id: "datalogger_003",
-    name: "EN-001",
+    name: "EN1",
     type: "NON_ATEX",
     measurementType: "TEMPERATURE",
     calibrationPeriodMonths: 6,
@@ -130,7 +130,7 @@ export const sampleDataloggers: Datalogger[] = [
   },
   {
     id: "datalogger_004",
-    name: "EN-002",
+    name: "EN2",
     type: "NON_ATEX",
     measurementType: "TEMP_HUMIDITY",
     calibrationPeriodMonths: 6,
@@ -142,7 +142,7 @@ export const sampleDataloggers: Datalogger[] = [
   },
   {
     id: "datalogger_005",
-    name: "EXX-003",
+    name: "E3",
     type: "ATEX",
     measurementType: "TEMPERATURE",
     calibrationPeriodMonths: 12,
@@ -154,7 +154,7 @@ export const sampleDataloggers: Datalogger[] = [
   },
   {
     id: "datalogger_006",
-    name: "EN-003",
+    name: "EN3",
     type: "NON_ATEX",
     measurementType: "TEMP_HUMIDITY",
     calibrationPeriodMonths: 6,
@@ -166,7 +166,7 @@ export const sampleDataloggers: Datalogger[] = [
   },
   {
     id: "datalogger_007",
-    name: "EXX-004",
+    name: "E4",
     type: "ATEX",
     measurementType: "TEMP_HUMIDITY",
     calibrationPeriodMonths: 12,
@@ -178,7 +178,7 @@ export const sampleDataloggers: Datalogger[] = [
   },
   {
     id: "datalogger_008",
-    name: "EN-004",
+    name: "EN4",
     type: "NON_ATEX",
     measurementType: "TEMPERATURE",
     calibrationPeriodMonths: 6,
@@ -279,7 +279,7 @@ export const sampleAuditLogs: AuditLog[] = [
     entityId: "datalogger_008",
     timestamp: "2025-09-15T10:30:00Z",
     newValue: {
-      name: "EN-004",
+      name: "EN4",
       type: "NON_ATEX",
       measurementType: "TEMPERATURE",
       calibrationPeriodMonths: 6,

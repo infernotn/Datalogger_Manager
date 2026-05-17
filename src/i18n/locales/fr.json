@@ -13,7 +13,8 @@
     "name": "Nom",
     "type": "Type",
     "status": "Statut",
-    "filter": "Filtrer par nom"
+    "filter": "Filtrer par nom",
+    "measurementType": "Measurement"
   },
   "usage": {
     "title": "Gestion des Utilisations",

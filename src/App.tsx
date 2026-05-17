@@ -14,9 +14,9 @@ function App() {
   return (
     <Router>
       <AuthProvider>
-        <div className="min-h-screen bg-darkBg text-darkText dark transition-colors duration-300">
+        <div className=" min-h-screen bg-darkBg text-darkText dark transition-colors duration-300">
           <Navigation />
-          <div className="w-full max-w-[1280px] mx-auto">
+          <div className="w-full max-w-[2000px] mx-auto">
             <Routes>
               <Route path="/login" element={<Login />} />
               <Route path="/" element={<Dashboard />} />

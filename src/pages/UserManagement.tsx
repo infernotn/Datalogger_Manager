@@ -95,7 +95,13 @@ const UserManagement: React.FC = () => {
           </tbody>
         </table>
       </div>
-      <PinModal isOpen={modalOpen} onClose={() => setModalOpen(false)} onConfirm={confirmAction} />
+      <PinModal
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        onConfirm={confirmAction}
+        user={userData}
+        onLoginRequired={() => navigate('/login')}
+      />
     </div>
   );
 };
