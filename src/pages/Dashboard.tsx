@@ -60,16 +60,16 @@ const Dashboard: React.FC = () => {
     visible: (i: number) => ({ opacity: 1, y: 0, transition: { delay: i * 0.1 } }),
   };
 
-  const alertVariants = {
-    hidden: { opacity: 0, x: 40 },
-    visible: (i: number) => ({ opacity: 1, x: 0, transition: { delay: i * 0.1 } }),
-  };
+  // const alertVariants = {
+  //   hidden: { opacity: 0, x: 40 },
+  //   visible: (i: number) => ({ opacity: 1, x: 0, transition: { delay: i * 0.1 } }),
+  // };
 
   if (loading) return <div className="flex items-center justify-center min-h-screen">{t('loading')}</div>;
 
   if (error) {
     return (
-      <div className="p-6 min-h-screen bg-darkBg text-darkText dark">
+      <div className="p-6  bg-darkBg text-darkText dark">
         <motion.div
           className="bg-darkAlertRed/20 border border-darkAlertRed rounded-lg p-6 mb-6"
           initial={{ opacity: 0, y: -20 }}
@@ -150,26 +150,26 @@ const Dashboard: React.FC = () => {
           </div>
         </motion.div>
 
-        <motion.div className="bg-darkCard p-6 rounded-lg shadow" initial="hidden" animate="visible" variants={cardVariants} custom={1}>
-          <h2 className="text-xl font-bold mb-4 flex items-center gap-2 text-primary-200">
-            <Assignment /> {t('dashboard.recentAlerts')}
-          </h2>
-          <ul className="space-y-2 max-h-64 overflow-y-auto">
-            {alerts.filter(a => a.alert !== 'OK').slice(0, 5).map((d, i) => (
-              <motion.li
-                key={d.id}
-                className={`p-2 rounded text-sm flex items-center gap-2 ${d.color === 'red' ? 'bg-darkAlertRed/20 text-darkAlertRed' : 'bg-darkAlertOrange/20 text-darkAlertOrange'}`}
-                variants={alertVariants}
-                initial="hidden"
-                animate="visible"
-                custom={i}
-              >
-                {d.color === 'red' ? <ErrorIcon /> : <WarningAmber />}
-                <strong>{d.name}</strong> - {t(`calibration.${d.alert}`)}
-              </motion.li>
-            ))}
-          </ul>
-        </motion.div>
+        {/*<motion.div className="bg-darkCard p-6 rounded-lg shadow" initial="hidden" animate="visible" variants={cardVariants} custom={1}>*/}
+        {/*  <h2 className="text-xl font-bold mb-4 flex items-center gap-2 text-primary-200">*/}
+        {/*    <Assignment /> {t('dashboard.recentAlerts')}*/}
+        {/*  </h2>*/}
+        {/*  <ul className="space-y-2 max-h-64 overflow-y-auto">*/}
+        {/*    {alerts.filter(a => a.alert !== 'OK').slice(0, 5).map((d, i) => (*/}
+        {/*      <motion.li*/}
+        {/*        key={d.id}*/}
+        {/*        className={`p-2 rounded text-sm flex items-center gap-2 ${d.color === 'red' ? 'bg-darkAlertRed/20 text-darkAlertRed' : 'bg-darkAlertOrange/20 text-darkAlertOrange'}`}*/}
+        {/*        variants={alertVariants}*/}
+        {/*        initial="hidden"*/}
+        {/*        animate="visible"*/}
+        {/*        custom={i}*/}
+        {/*      >*/}
+        {/*        {d.color === 'red' ? <ErrorIcon /> : <WarningAmber />}*/}
+        {/*        <strong>{d.name}</strong> - {t(`calibration.${d.alert}`)}*/}
+        {/*      </motion.li>*/}
+        {/*    ))}*/}
+        {/*  </ul>*/}
+        {/*</motion.div>*/}
       </div>
     </div>
   );

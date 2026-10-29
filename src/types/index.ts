@@ -26,7 +26,7 @@ export type Datalogger = {
   calibrationPeriodMonths: number;
   lastCalibrationDate: string;
   nextCalibrationDate: string;
-  status: "AVAILABLE" | "IN_USE" | "OUT_OF_SERVICE";
+  status: "AVAILABLE" | "IN_USE" | "OUT_OF_SERVICE"| "IN_CALIBRATION";
   currentUsageId?: string;
   createdAt: string;
   updatedAt: string;

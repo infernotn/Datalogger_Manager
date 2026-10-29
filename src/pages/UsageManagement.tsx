@@ -33,6 +33,7 @@ const UsageManagement: React.FC = () => {
   const [filter, setFilter] = useState('');
   const [modalOpen, setModalOpen] = useState(false);
   const [action, setAction] = useState<{ type: string; data?: any } | null>(null);
+  const [selectOpen, setSelectOpen] = useState(false);
 
   // ============ FETCH USAGES ON MOUNT ============
   /**
@@ -118,7 +119,7 @@ const UsageManagement: React.FC = () => {
           className="flex-1 p-2 bg-darkCard border border-darkAccent rounded text-darkText placeholder-darkAccent focus:outline-none focus:border-primary-500"
         />
         {/* Assign new usage button - opens PIN modal for security verification */}
-        <button onClick={() => handleAction('assign')} className="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded transition-colors">{t('assign')}</button>
+        <button onClick={() => setSelectOpen(true)} className="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded transition-colors">{t('assign')}</button>
       </div>
 
       {/* ============ USAGES TABLE ============ */}
@@ -161,16 +162,15 @@ const UsageManagement: React.FC = () => {
       {/* ============ PIN CONFIRMATION MODAL ============ */}
       {/* Modal for PIN verification before executing sensitive actions (assign/close) */}
       {/*<PinModal isOpen={modalOpen} onClose={() => setModalOpen(false)} onConfirm={confirmAction} />*/}
-    <SelectDataLoggerModal isOpen={true}  onClose={()=>{}}
 
-                           onSave={()=>{}}
-                           dataloggers={[{
-      id: "1",
-      name: "DL-001"
-    },{
-        id: "2",
-        name: "DL-002"
-    } ]} />
+      {selectOpen &&
+
+          <SelectDataLoggerModal isOpen={true}  onClose={()=>{setSelectOpen(false)}}
+
+
+/>
+      }
+
     </div>
 
   );
